@@ -1,0 +1,26 @@
+.ais_create_step {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 10px 10%;
+    text-align: center;
+}
+#aisb_create_btn {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#aisb_create_btn:hover, #aisb_create_btn:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}

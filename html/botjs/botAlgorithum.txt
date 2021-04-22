@@ -1,0 +1,74 @@
+
+    -------------------------------------------------------------------------------------
+    ----------------------- Artificial Intelligence Search Bot --------------------------
+    -------------------------------------------------------------------------------------
+
+    1. searchBot - Initialize Search Bot
+       --- Initialize Input and pass unique event Handler
+       --- Initialize Default setting
+       --- Initialize Default data of shopping cart
+
+    2. controller - Get User Input than indicate right action
+       --- Get User Input and indicate right action with a process pipeline
+       --- Actions
+           --- singleAction - Indicator for action
+           --- quickAction - Quick Action for filter
+           --- knowledgeBase - knowledge Base controller
+           --- master - Final stage of controller
+
+    3. actionBot - Get action bundle and Indicate single action
+       --- Get action bundle from controller then Indicate single action
+       --- Actions
+           --- Symbol - send action request to search Engine
+           --- one Word - send action request to search Engine
+           --- Two Words - send action request to search Engine
+           --- Url action - send action request to search Engine
+           --- Help action - send action request to search Engine
+           --- custom action - send action request to search Engine
+           --- () - upcoming
+
+    4. searchEngine - Elasticlurn Lightweight Full text search engine
+    5. fuseSearch - Fuse Fuzzy search index
+    6. tamplate - get data to make html template
+    7. pagination - init pagination
+    7. common - init pagination
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

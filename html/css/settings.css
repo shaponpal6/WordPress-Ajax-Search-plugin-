@@ -1,0 +1,366 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.cb-setting{
+    display: none;
+}
+.active{
+    display: block;
+}
+body {
+    background: #F0F1F2;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 64px;
+    text-align: center;
+    line-height: 200px;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background: url("../bg/bg7.png");
+    background-size: cover;
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+.sidebar {
+    display: inline-block;
+    width: 25%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sidebar i {
+    margin-right: 15px;
+}
+
+.sidebar__header {
+    vertical-align: top;
+    background: #FAFBFB;
+    padding: 20px;
+    border-bottom: 1px solid #F0F1F2;
+}
+.sidebar__header img.sidebar__avatar {
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sidebar__header p {
+    line-height: 2em;
+    margin: 0;
+}
+
+.sidebar__menu-item {
+    background: #FFF;
+    padding: 20px;
+    color: #333;
+    border-bottom: 1px solid #F0F1F2;
+    transition: all 0.3s ease;
+}
+.sidebar__menu-item--active {
+    color: #000;
+    border-left: 3px solid #348AA7;
+}
+.sidebar__menu-item:hover {
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+.sidebar__label {
+    float: right;
+    font-size: 80%;
+    line-height: 1.6em;
+    color: #FDE756;
+}
+
+.sidebar__badge {
+    text-align: center;
+    float: right;
+    font-size: 70%;
+    line-height: 1.8em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #FFF;
+    background: #8ED081;
+}
+
+.main {
+    width: 70%;
+    vertical-align: top;
+    display: inline-block;
+    background: #FFF;
+    margin-left: 3%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.main__header {
+    padding: 20px;
+    border-bottom: 1px solid #F0F1F2;
+}
+
+.main__content {
+    padding: 20px;
+}
+
+.main__avatar {
+    background: url("https://unsplash.it/150/?image=209");
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    display: block;
+    vertical-align: middle;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main__avatar:hover .main__avatar--overlay {
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.main__avatar--overlay {
+    opacity: 0;
+    background: rgba(52, 138, 167, 0.6);
+    color: #FFF;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main__settings-form {
+    max-width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+.main__input-label {
+    font-size: 90%;
+    color: #333;
+    display: block;
+    margin: 5px 5px 5px 5px;
+}
+
+.main__input {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+}
+.main__input:focus {
+    border: 1px solid #348AA7;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+    outline: none;
+}
+
+/** ----------------------------------------------
+* Select Box
+* ------------------------------------------------*/
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 16px;
+}
+/* remove default arrow in IE */
+select::-ms-expand {
+    display:none;
+}
+/** ----------------------------------------------
+* Table
+* ------------------------------------------------*/
+table {
+    text-align: center;
+    margin-bottom: 40px;
+}
+table th, table tbody tr th {
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 5px;
+    text-align: center;
+    background: #ffba00 !important;
+}
+table td {
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    background: #f1f1f1;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    padding: 10px 5px;
+}
+table thead th {
+    padding: 15px 20px;
+    text-align: center;
+    background: #ffba00 !important;
+}
+
+tr:hover:not(th) {background-color: rgba(237,28,64,.1);}
+
+
+input[type="button"] {
+    transition: all .3s;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="button"]:not(.pg-active) {
+    background-color:transparent;
+}
+
+.pg-active {
+    background-color: #ff4d4d;
+    color :#fff;
+}
+
+input[type="button"]:hover:not(.pg-active) {
+    background-color: #ddd;
+}
+/*----------------------------------
+* Settings UI
+ ---------------------------------*/
+.setting-block{
+    display: flex;
+    flex-direction: column;
+}
+#saveKnowledge{
+    float: right;
+    padding: 10px;
+    background: #ff3997;
+}
+#showHideKnowledge{
+    display: inline-block;
+    width: 20%;
+    float: right;
+    padding: 10px;
+    background: #ff3997;
+}
+
+.s-row{
+    display: inline-flex;
+    padding: 15px 0px;
+    width:100%;
+    font-size: 16px;
+    color: #333;
+    align-items: center;
+}
+.s-row label{
+    width: 50%;
+}
+.s-row .s-action{
+    padding: 0 20px;
+}
+.s-select{
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 3px;
+}
+.on{
+    background: green;
+    display: none;
+}
+.off{
+    background: red;
+    display: none;
+}
+.ok{
+    display: block;
+    z-index: 999;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main__save-button {
+    color: #FFF;
+    background-color: #8ED081;
+}
+.main__save-button:hover {
+    background-color: #6dc25c;
+    cursor: pointer;
+}
+
+.main__cancel-button {
+    color: #FFF;
+    background: #CCC;
+}
+.main__cancel-button:hover {
+    background-color: #b3b3b3;
+    cursor: pointer;
+}
+
+/************************************************************************
+****************************** Multi Select *****************************
+*************************************************************************/
+.sItem{
+    padding: 5px 10px;
+    background: #674;
+    margin: 0 5px 0 0;
+    border: 1px solid #32b424;
+    border-radius: 10px;
+    color: #fff;
+}
+
+footer {
+    background: #464C4F;
+    padding: 40px;
+    color: #CCC;
+    font-size: 90%;
+}
+
+@media (max-width: 764px) {
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sidebar__menu-item {
+        padding: 15px;
+    }
+
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

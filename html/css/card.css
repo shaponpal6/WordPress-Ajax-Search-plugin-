@@ -1,0 +1,153 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4cff7;
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2em;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.product-img {
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+}
+
+.product-img img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.product-img img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cb-s-content {
+    text-align: left;
+}
+
+.cb-s-content h4 {
+    color: royalblue;
+    font-weight: 500;
+    /*font-variant: petite-caps;*/
+    font-size: 20px;
+}
+.cb-s-content a {
+    color: green;
+    text-decoration: none;
+    font-size: 12px;
+}
+.s-title {
+    padding: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.cb-s-content .s-text {
+    font-weight: 100;
+    padding: 5px 10px 20px;
+    font-size: 14px;
+}
+
+.cb-s-footer {
+    display: flex;
+    justify-content: space-between;
+    background: #50c05066;
+    width: 100%;
+    padding: 5px 10px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.s-price {
+}
+
+.s-buy {
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+    padding: 5px 10px;
+    border: 1px solid #052020;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s ease;
+}
+
+.s-buy:hover {
+    padding-right: 25px;
+}
+
+.s-buy:hover:after {
+    margin-left: 5px;
+}
+
+.s-buy:after {
+    font-family: 'simple-line-icons';
+    content: ' +';
+    transition: all .2s ease;
+    position: absolute;
+    color: #000;
+    margin-left: 30px;
+    transition: all .2s ease;
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    height: auto;
+    margin: 1rem;
+    position: relative;
+    width: 280px;
+    overflow: hidden;
+    float: left;
+}
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-1:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}

@@ -1,0 +1,12 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+#acb-chatbot {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 9999;
+    height: 100vh;
+    width: 400px;
+}
